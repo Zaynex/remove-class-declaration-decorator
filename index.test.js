@@ -37,6 +37,7 @@ test('strips class decorators', () => {
   const fn = new Function(code)
 
   expect(new fn().decoratedProperty).toBe(undefined)
+
 })
 
 test('test ignore decorator', () => {

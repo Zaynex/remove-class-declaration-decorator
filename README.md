@@ -33,3 +33,15 @@ Add to your babelrc:
   }
 }
 ```
+
+If you want ignore some decorators like `@connect` in `react-redux`.
+
+```json
+{
+  "env": {
+    "test": {
+      "plugins": [["remove-class-declaration-decorator", {"ignoreItems": ["connect"]}]]
+    }
+  }
+}
+```
